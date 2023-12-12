@@ -88,7 +88,7 @@
 
 .animated.logo::before {
     animation-name: bounceLeft;
-    animation-duration: 4s;
+    animation-duration: 1500ms;
     animation-delay: 1s;
 }
 
@@ -98,7 +98,7 @@
 
 .animated.logo::after {
     animation-name: bounceRight;
-    animation-duration: 4s;
+    animation-duration: 1500ms;
     animation-delay: 1s;
 }
 
@@ -111,6 +111,12 @@
     left: calc(19 * var(--step-px) / 2);
     top: calc(19 * var(--step-px) / 2);
     border-radius: 50% 50% 54% 46% / 20% 20% 80% 80%;
+    transform: scaleX(0.3);
+    transition: transform 250ms ease-in-out 2500ms;
+}
+
+.animated .smile {
+    transform: scaleX(1);
 }
 
 .smile::before {
@@ -123,6 +129,12 @@
     position: absolute;
     top: calc(0px - var(--step-px) / 2);
     left: calc(var(--step-px) / 2);
+    transform: scale(0);
+    transition: transform 250ms ease-in-out 2500ms;
+}
+
+.animated .smile::before {
+    transform: scale(1);
 }
 
 .logo-describe {
@@ -144,24 +156,31 @@
     left: calc(40 * var(--step-px) / 2);
     color: #c20505;
     font-family: caveat;
+    opacity: 0;
+    transform: translateY(calc(2 * var(--step-px)));
+    transition: transform 300ms ease-in-out 500ms, opacity 300ms ease-in-out 500ms;
 }
 
-.later-c::after {
-    content: "";
+.animated .later-c {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.crossout {
     display: block;
     position: absolute;
-    width: calc(22 * var(--step-px) / 2);
+    width: calc(20 * var(--step-px) / 2);
     height: calc(var(--step-px) / 2);
     background-color: #c20505;
     border-radius: calc(var(--step-px) / 2);
     transform-origin: left;
     transform: rotate(54deg) scaleX(0);
-    left: calc(0px - 2 * var(--step-px) / 2);
-    top: calc(20 * var(--step-px) / 2);
+    left: calc(38 * var(--step-px) / 2);
+    top: calc(3 * var(--step-px) / 2);
     transition: transform 250ms ease-in-out;
 }
 
-.animated .later-c::after {
+.animated .crossout {
     transform: rotate(54deg) scaleX(1);
 }
 
