@@ -1,0 +1,23 @@
+body {
+    background-color: var(--bg-body-light);
+    font-family: 'caveat';
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 375px;
+
+    @media (min-width: 719px) {
+        padding: 0 15px;
+        max-width: 768px;
+    }
+
+    @media (min-width: 1024px) {
+        max-width: 1024px;
+    }
+}

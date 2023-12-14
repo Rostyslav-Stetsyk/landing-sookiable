@@ -1,0 +1,23 @@
+.header .button-burger-menu {
+    display: block;
+    background: transparent;
+    border: none;
+    padding-top: calc(4*var(--step-px));
+}
+
+.header .icon-burger-menu {
+    fill: var(--first-logo-gold-color);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between
+}
+
+.header nav {
+    display: none;
+}
+
+.header .nav-list {
+    display: flex;
+}

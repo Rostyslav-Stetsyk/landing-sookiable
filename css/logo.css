@@ -1,0 +1,182 @@
+@keyframes bounceLeft {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    30% {
+        transform: translateY(-4px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes bounceRight {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    30% {
+        transform: translateY(-4px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    70% {
+        transform: translateY(0px) scaleY(0.1);
+    }
+
+    100% {
+        transform: translateY(0px) scaleY(1);
+    }
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    align-items: center;
+    padding: calc(8 * var(--step-px)) 0 0 0;
+
+    font-family: 'roboto';
+    text-transform: uppercase;
+    font-size: calc(19 * var(--step-px) / 2);
+    background: linear-gradient(148deg,
+            rgba(246, 173, 45, 1) 5%,
+            rgba(247, 202, 123, 1) 6%,
+            rgba(247, 202, 123, 1) 18%,
+            rgba(246, 173, 45, 1) 19%,
+            rgba(246, 173, 45, 1) 31%,
+            rgba(247, 202, 123, 1) 32%,
+            rgba(247, 202, 123, 1) 44%,
+            rgba(246, 173, 45, 1) 45%,
+            rgba(246, 173, 45, 1) 57%,
+            rgba(247, 202, 123, 1) 58%,
+            rgba(247, 202, 123, 1) 70%,
+            rgba(246, 173, 45, 1) 71%,
+            rgba(246, 173, 45, 1) 83%,
+            rgba(247, 202, 123, 1) 84%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.logo::after,
+.logo::before {
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: #2f2710;
+    width: calc(3 * var(--step-px) / 2);
+    height: calc(4 * var(--step-px) / 2);
+    border-radius: 50%;
+    top: calc(26 * var(--step-px) / 2);
+}
+
+.logo::before {
+    left: calc(17 * var(--step-px) / 2);
+}
+
+.animated.logo::before {
+    animation-name: bounceLeft;
+    animation-duration: 1500ms;
+    animation-delay: 1s;
+}
+
+.logo::after {
+    left: calc(30 * var(--step-px) / 2);
+}
+
+.animated.logo::after {
+    animation-name: bounceRight;
+    animation-duration: 1500ms;
+    animation-delay: 1s;
+}
+
+.smile {
+    position: absolute;
+    display: block;
+    width: calc(10 * var(--step-px) / 2);
+    height: calc(5 * var(--step-px) / 2);
+    background-color: #c20505;
+    left: calc(19 * var(--step-px) / 2);
+    top: calc(35 * var(--step-px) / 2);
+    border-radius: 50% 50% 54% 46% / 20% 20% 80% 80%;
+    transform: scaleX(0.3);
+    transition: transform 250ms ease-in-out 2500ms;
+}
+
+.animated .smile {
+    transform: scaleX(1);
+}
+
+.smile::before {
+    content: "";
+    display: block;
+    width: calc(8 * var(--step-px) / 2);
+    height: calc(3 * var(--step-px) / 2);
+    background-color: #f9f2e7;
+    border-radius: 50% 50% 54% 46% / 20% 20% 80% 80%;
+    position: absolute;
+    top: calc(0px - var(--step-px) / 2);
+    left: calc(var(--step-px) / 2);
+    transform: scale(0);
+    transition: transform 250ms ease-in-out 2500ms;
+}
+
+.animated .smile::before {
+    transform: scale(1);
+}
+
+.logo-describe {
+    display: block;
+    font-family: 'caveat';
+    font-size: calc(8 * var(--step-px) / 2);
+    color: #309188;
+    text-transform: lowercase;
+}
+
+.logo-describe span {
+    text-transform: uppercase;
+    margin-left: calc(var(--step-px) / 2);
+}
+
+.later-c {
+    position: absolute;
+    top: calc(-2 * var(--step-px) / 2);
+    left: calc(40 * var(--step-px) / 2);
+    color: #c20505;
+    font-family: caveat;
+    opacity: 0;
+    transform: translateY(calc(2 * var(--step-px)));
+    transition: transform 300ms ease-in-out 500ms, opacity 300ms ease-in-out 500ms;
+}
+
+.animated .later-c {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.crossout {
+    display: block;
+    position: absolute;
+    width: calc(20 * var(--step-px) / 2);
+    height: calc(var(--step-px) / 2);
+    background-color: #c20505;
+    border-radius: calc(var(--step-px) / 2);
+    transform-origin: left;
+    transform: rotate(54deg) scaleX(0);
+    left: calc(38 * var(--step-px) / 2);
+    top: calc(19 * var(--step-px) / 2);
+    transition: transform 250ms ease-in-out;
+}
+
+.animated .crossout {
+    transform: rotate(54deg) scaleX(1);
+}

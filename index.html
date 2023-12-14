@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Soociable</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Caveat&family=Roboto:wght@500&display=swap"
       rel="stylesheet"
@@ -14,98 +15,53 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body style="background-color: #f9f2e7">
-    <img src="./img/logo.svg" alt="" width="400" />
-    <div class="flex-div">
-      <h1 class="logo">
-        <span class="later-c">C</span>
-        <span class="crossout"></span>
-        Sookiable
-        <span class="smile"></span>
-        <span class="logo-describe">
-          роз
-          <span>МОВНА</span>
-          школа
-        </span>
-      </h1>
-      <h1 class="logo" style="--step-px: 7px">
-        <span class="later-c">C</span>
-        <span class="crossout"></span>
-        Sookiable
-        <span class="smile"></span>
-        <span class="logo-describe">
-          роз
-          <span>МОВНА</span>
-          школа
-        </span>
-      </h1>
-      <h1 class="logo" style="--step-px: 6px">
-        <span class="later-c">C</span>
-        <span class="crossout"></span>
-        Sookiable
-        <span class="smile"></span>
-        <span class="logo-describe">
-          роз
-          <span>МОВНА</span>
-          школа
-        </span>
-      </h1>
-      <h1 class="logo" style="--step-px: 5px">
-        <span class="later-c">C</span>
-        <span class="crossout"></span>
-        Sookiable
-        <span class="smile"></span>
-        <span class="logo-describe">
-          роз
-          <span>МОВНА</span>
-          школа
-        </span>
-      </h1>
-      <h1 class="logo" style="--step-px: 4px">
-        <span class="later-c">C</span>
-        <span class="crossout"></span>
-        Sookiable
-        <span class="smile"></span>
-        <span class="logo-describe">
-          роз
-          <span>МОВНА</span>
-          школа
-        </span>
-      </h1>
-      <h1 class="logo" style="--step-px: 3px">
-        <span class="later-c">C</span>
-        <span class="crossout"></span>
-        Sookiable
-        <span class="smile"></span>
-        <span class="logo-describe">
-          роз
-          <span>МОВНА</span>
-          школа
-        </span>
-      </h1>
-      <h1 class="logo" style="--step-px: 2px">
-        <span class="later-c">C</span>
-        <span class="crossout"></span>
-        Sookiable
-        <span class="smile"></span>
-        <span class="logo-describe">
-          роз
-          <span>МОВНА</span>
-          школа
-        </span>
-      </h1>
-      <h1 class="logo" style="--step-px: 1px">
-        <span class="later-c">C</span>
-        <span class="crossout"></span>
-        Sookiable
-        <span class="smile"></span>
-        <span class="logo-describe">
-          роз
-          <span>МОВНА</span>
-          школа
-        </span>
-      </h1>
-    </div>
+  <body>
+    <!-- Header -->
+    <header class="header section">
+      <div class="container">
+        <a
+          href="#"
+          class="logo"
+          role="banner"
+          aria-roledescription="Logo soociable"
+        >
+          <span class="later-c">C</span>
+          <span class="crossout"></span>
+          Sookiable
+          <span class="smile"></span>
+          <span class="logo-describe">роз<span>мовна</span> школа </span>
+        </a>
+
+        <button
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          class="button-burger-menu"
+        >
+          <svg class="icon-burger-menu" width="48" height="48">
+            <use href="./img/spryte.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
+
+        <nav>
+          <ul class="nav-list">
+            <li><a href="#" class="nav-link">Хто ми</a></li>
+            <li><a href="#" class="nav-link">Чому</a></li>
+            <li><a href="#" class="nav-link">Для кого</a></li>
+            <li><a href="#" class="nav-link">Ціна</a></li>
+            <li><a href="#" class="nav-link">Де нас знайти</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <main></main>
+
+    <!-- Footer -->
+    <footer></footer>
+
+    <!-- Scripts -->
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
