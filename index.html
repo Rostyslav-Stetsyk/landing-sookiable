@@ -19,31 +19,41 @@
     <!-- Header -->
     <header class="header section">
       <div class="container">
-        <a
-          href="#"
-          class="logo"
-          role="banner"
-          aria-roledescription="Logo soociable"
-        >
-          <span class="later-c">C</span>
-          <span class="crossout"></span>
-          Sookiable
-          <span class="smile"></span>
-          <span class="logo-describe">роз<span>мовна</span> школа </span>
-        </a>
+        <div class="mob-wrapper">
+          <a
+            href="#"
+            class="js-logo logo"
+            role="banner"
+            aria-roledescription="Logo soociable"
+          >
+            <span class="later-c">C</span>
+            <span class="crossout"></span>
+            Sookiable
+            <span class="smile"></span>
+            <span class="logo-describe">роз<span>мовна</span> школа </span>
+          </a>
 
-        <button
-          type="button"
-          aria-label="Open menu"
-          aria-expanded="false"
-          class="button-burger-menu"
-        >
-          <svg class="icon-burger-menu" width="48" height="48">
-            <use href="./img/spryte.svg#icon-burger-menu"></use>
-          </svg>
-        </button>
+          <button
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            id="mob-menu"
+            class="button-burger-menu"
+          >
+            <svg width="48" height="48">
+              <use
+                class="icon-burger-menu"
+                href="./img/spryte.svg#icon-burger-menu"
+              ></use>
+              <use
+                class="icon-cross-menu"
+                href="./img/spryte.svg#icon-cross"
+              ></use>
+            </svg>
+          </button>
+        </div>
 
-        <nav>
+        <nav id="menu" class="hidden-visually">
           <ul class="nav-list">
             <li><a href="#" class="nav-link">Хто ми</a></li>
             <li><a href="#" class="nav-link">Чому</a></li>
@@ -56,7 +66,12 @@
     </header>
 
     <!-- Main content -->
-    <main></main>
+    <main>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis
+      maiores inventore, nihil ullam, ducimus quas quisquam aliquid atque
+      consequuntur voluptatibus expedita, eligendi libero impedit omnis enim quo
+      ipsa unde laboriosam.
+    </main>
 
     <!-- Footer -->
     <footer></footer>
