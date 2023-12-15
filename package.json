@@ -1,5 +1,21 @@
 {
+  "name": "landing-sookiable",
+  "source": "src/index.html",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "Rostyslav Stetsyk <rostyslav.stetsyk1999@gmail.com>",
+  "license": "ISC",
+  "description": "",
   "dependencies": {
     "modern-normalize": "^2.0.0"
-  }
+  },
+  "devDependencies": {
+    "parcel": "^2.10.3"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
 }
