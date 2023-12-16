@@ -17,4 +17,14 @@ const openMobMenu = (e) => {
   }
 };
 
+window.matchMedia("(min-width: 1024px)").addEventListener("change", (e) => {
+  if (!e.matches) {
+    return;
+  }
+  refs.header.classList.remove("js-open-menu");
+  document.body.style.overflow = "auto";
+
+  e.currentTarget.ariaExpanded = false;
+});
+
 refs.button.addEventListener("click", openMobMenu);

@@ -102,6 +102,10 @@
 }
 
 @media (min-width: 1024px) {
+    .header .mob-wrapper {
+        width: fit-content;
+    }
+
     .header .button-burger-menu {
         display: none;
     }
