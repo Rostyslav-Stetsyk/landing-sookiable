@@ -1,0 +1,2 @@
+!function(){let e={button:document.querySelector("#mob-menu"),header:document.querySelector(".header.section")};e.button.addEventListener("click",t=>{"false"===t.currentTarget.ariaExpanded?(e.header.classList.add("js-open-menu"),document.body.style.overflow="hidden",t.currentTarget.ariaExpanded=!0):(e.header.classList.remove("js-open-menu"),document.body.style.overflow="auto",t.currentTarget.ariaExpanded=!1)});let t=document.querySelectorAll(".js-logo");setTimeout(()=>t.forEach(e=>e.classList.add("animated")),1e3)}();
+//# sourceMappingURL=index.66d48cc6.js.map
