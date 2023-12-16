@@ -47,23 +47,26 @@
     transition: transform 300ms ease-in-out;
     background-color: var(--bg-body-light);
     display: block;
+    padding-top: calc(24 * var(--step-px));
     width: 100vw;
-    height: 100dvh;
+    height: 100vh;
+    min-height: 308px;
     position: absolute;
     z-index: 0;
     left: 50%;
     top: 50%;
+    overflow-y: scroll;
 }
 
 .header .nav-list {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 100%;
+    max-height: calc(100% - 24 * var(--step-px));
+    padding-top: calc(12 * var(--step-px));
     width: 100%;
     column-gap: 20%;
     align-items: center;
-    padding-top: calc(24 * var(--step-px));
     font-size: calc(10 * var(--step-px));
     position: absolute;
     left: 50%;
@@ -72,7 +75,6 @@
 }
 
 .js-open-menu nav {
-    background-color: var(--bg-body-light);
     transform: translate(-50%, -50%);
 }
 
@@ -115,8 +117,11 @@
     }
 
     .header nav {
+        padding: 0;
+        overflow: unset;
         width: auto;
         height: auto;
+        min-height: auto;
         transition: none;
         position: unset;
         transform: none;
