@@ -58,8 +58,12 @@
 .header .nav-list {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    column-gap: 20%;
     align-items: center;
-    padding-top: calc(10 * var(--step-px));
+    padding-top: calc(24 * var(--step-px));
     font-size: calc(10 * var(--step-px));
     position: absolute;
     left: 50%;
