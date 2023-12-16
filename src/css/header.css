@@ -43,6 +43,14 @@
 .header nav {
     transform: translate(-50%, -150%);
     transition: transform 300ms ease-in-out;
+    background-color: var(--bg-body-light);
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
 }
 
 .header .nav-list {
@@ -59,17 +67,35 @@
 
 .js-open-menu nav {
     background-color: var(--bg-body-light);
-    display: block;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    z-index: 0;
-    left: 50%;
-    top: 50%;
     transform: translate(-50%, -50%);
 }
 
 .nav-list .nav-link {
+    width: 80vw;
+    text-align: center;
     display: block;
     padding: calc(3 * var(--step-px));
+    font-size: 40px;
+    color: var(--logo-dark-brown-color);
+}
+
+.nav-list .nav-link:hover,
+.nav-list .nav-link:focus {
+    animation-name: vibration;
+    animation-duration: 300ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes vibration {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-2deg);
+    }
+
+    75% {
+        transform: rotate(2deg);
+    }
 }
