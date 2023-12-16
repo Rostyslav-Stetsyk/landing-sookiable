@@ -7,6 +7,7 @@ const openMobMenu = (e) => {
   if (e.currentTarget.ariaExpanded === "false") {
     refs.header.classList.add("js-open-menu");
     document.body.style.overflow = "hidden";
+    window.scrollTo(0, 0);
 
     e.currentTarget.ariaExpanded = true;
   } else {
