@@ -63,9 +63,10 @@
     flex-direction: column;
     flex-wrap: wrap;
     max-height: calc(100% - 24 * var(--step-px));
+    padding: 0 30px;
     padding-top: calc(12 * var(--step-px));
     width: 100%;
-    column-gap: 20%;
+    column-gap: 10%;
     align-items: center;
     font-size: calc(10 * var(--step-px));
     position: absolute;
