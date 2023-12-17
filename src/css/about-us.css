@@ -11,7 +11,6 @@
 
 .about-us .flip-card {
     position: relative;
-
     overflow: hidden;
     height: 280px;
     border-radius: 24px;
@@ -26,7 +25,6 @@
 
 .about-us .img-shadow {
     position: absolute;
-
     top: 50%;
     right: 50%;
     display: block;
@@ -49,13 +47,11 @@
 
 .hero-decorate {
     position: relative;
-
     max-width: 375px;
 }
 
 .about-us .post {
     position: absolute;
-
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -145,4 +141,24 @@
 .hero-sticker .btn:focus {
     background-color: var(--first-logo-gold-color);
     transform: scale(1.05);
+}
+
+@media (min-width: 719px) {
+    .about-us .container {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+
+    .about-us .hero-decorate {
+        width: 50%;
+        max-width: 420px;
+    }
+
+    .about-us .flip-card {
+        height: 320px;
+    }
+
+    .about-us .hero-sticker {
+        width: 50%;
+    }
 }
