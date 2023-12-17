@@ -2,4 +2,4 @@
 
 // setTimeout(() => logo.forEach((el) => el.classList.add("animated")), 1000);
 
-document.body.classList.add("animated");
+setTimeout(() => document.body.classList.add("animated"), 1000);
