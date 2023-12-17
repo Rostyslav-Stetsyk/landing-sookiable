@@ -1,5 +1,6 @@
-.header {
+.header.section {
     background-color: var(--bg-body-light);
+    padding: 0;
 }
 
 .header .container {
@@ -89,24 +90,27 @@
 
 .nav-list .nav-link:hover,
 .nav-list .nav-link:focus {
-    animation-name: vibration;
+    color: var(--first-logo-gold-color);
+    transition: color 250ms ease-in-out;
+
+    /* animation-name: vibration;
     animation-duration: 300ms;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
 }
 
-@keyframes vibration {
+/* @keyframes vibration {
     0% {
         transform: rotate(0deg);
     }
 
     25% {
-        transform: rotate(-2deg);
+        transform: rotate(-1deg);
     }
 
     75% {
-        transform: rotate(2deg);
+        transform: rotate(1deg);
     }
-}
+} */
 
 @media (min-width: 1024px) {
     .header .mob-wrapper {

@@ -83,7 +83,7 @@
     left: calc(17 * var(--step-px) / 2);
 }
 
-.animated.logo::before {
+.animated .logo::before {
     animation-name: bounceLeft;
     animation-duration: 1500ms;
     animation-delay: 1s;
@@ -93,7 +93,7 @@
     left: calc(30 * var(--step-px) / 2);
 }
 
-.animated.logo::after {
+.animated .logo::after {
     animation-name: bounceRight;
     animation-duration: 1500ms;
     animation-delay: 1s;
