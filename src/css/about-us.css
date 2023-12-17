@@ -1,3 +1,9 @@
+.about-us .container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
 .about-us .img-container {
     max-width: 420px;
     position: relative;
@@ -5,7 +11,7 @@
 
 .about-us .flip-card {
     position: relative;
-    z-index: -1;
+
     overflow: hidden;
     height: 280px;
     border-radius: 24px;
@@ -20,7 +26,7 @@
 
 .about-us .img-shadow {
     position: absolute;
-    z-index: -1;
+
     top: 50%;
     right: 50%;
     display: block;
@@ -43,13 +49,13 @@
 
 .hero-decorate {
     position: relative;
-    z-index: -1;
+
     max-width: 375px;
 }
 
 .about-us .post {
     position: absolute;
-    z-index: -1;
+
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -105,4 +111,38 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
+}
+
+.about-us .hero-sticker {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    max-width: 375px;
+    height: 320px;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #F8F1CE;
+    font-size: 24px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.hero-sticker .title {
+    font-weight: 500;
+}
+
+.hero-sticker .btn {
+    padding: 8px 16px;
+    border-radius: 24px;
+    width: fit-content;
+    border: none;
+    background-color: var(--second-logo-light-gold-color);
+    transform: scale(1);
+    transition: background-color 250ms ease-in-out, transform 250ms ease-in-out;
+}
+
+.hero-sticker .btn:hover,
+.hero-sticker .btn:focus {
+    background-color: var(--first-logo-gold-color);
+    transform: scale(1.05);
 }

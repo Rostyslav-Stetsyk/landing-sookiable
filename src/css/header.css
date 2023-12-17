@@ -12,13 +12,14 @@
 .header .mob-wrapper {
     width: 100%;
     position: relative;
-    z-index: 1;
     background-color: var(--bg-body-light);
     display: flex;
     justify-content: space-between;
 }
 
 .header .button-burger-menu {
+    position: relative;
+    z-index: 2;
     display: block;
     background: transparent;
     border: none;
@@ -53,7 +54,7 @@
     height: 100vh;
     min-height: 308px;
     position: absolute;
-    z-index: 0;
+    z-index: 1;
     left: 50%;
     top: 50%;
     overflow-y: scroll;
@@ -92,25 +93,8 @@
 .nav-list .nav-link:focus {
     color: var(--first-logo-gold-color);
     transition: color 250ms ease-in-out;
-
-    /* animation-name: vibration;
-    animation-duration: 300ms;
-    animation-iteration-count: infinite; */
 }
 
-/* @keyframes vibration {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    25% {
-        transform: rotate(-1deg);
-    }
-
-    75% {
-        transform: rotate(1deg);
-    }
-} */
 
 @media (min-width: 1024px) {
     .header .mob-wrapper {

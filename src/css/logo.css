@@ -38,6 +38,7 @@
 
 .logo {
     position: relative;
+    z-index: 2;
     display: flex;
     width: fit-content;
     flex-direction: column;
