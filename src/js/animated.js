@@ -1,5 +1,3 @@
-// const logo = document.querySelectorAll(".js-logo");
+const x = () => setTimeout(() => document.body.classList.add("animated"), 1500);
 
-// setTimeout(() => logo.forEach((el) => el.classList.add("animated")), 1000);
-
-setTimeout(() => document.body.classList.add("animated"), 1000);
+x();

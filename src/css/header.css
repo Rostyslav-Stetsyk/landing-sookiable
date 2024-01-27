@@ -12,6 +12,7 @@
 .header .mob-wrapper {
     width: 100%;
     position: relative;
+    z-index: 2;
     background-color: var(--bg-body-light);
     display: flex;
     justify-content: space-between;
