@@ -2,49 +2,23 @@ import { defineConfig } from "vite";
 import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 
 const DEFAULT_OPTIONS = {
-  test: /\.(jpe?g|png|gif|tiff|webp|svg|avif)$/i,
+  test: /\.(jpe?g|png|gif|tiff|webp|avif)$/i,
   exclude: undefined,
   include: undefined,
   includePublic: true,
   logStats: true,
   ansiColors: true,
-  svg: {
-    multipass: true,
-    plugins: [
-      {
-        name: "preset-default",
-        params: {
-          overrides: {
-            cleanupNumericValues: false,
-            removeViewBox: false, // https://github.com/svg/svgo/issues/1128
-          },
-          cleanupIDs: {
-            minify: false,
-            remove: false,
-          },
-          convertPathData: false,
-        },
-      },
-      "sortAttrs",
-      {
-        name: "addAttributesToSVGElement",
-        params: {
-          attributes: [{ xmlns: "http://www.w3.org/2000/svg" }],
-        },
-      },
-    ],
-  },
   png: {
     // https://sharp.pixelplumbing.com/api-output#png
-    quality: 100,
+    quality: 90,
   },
   jpeg: {
     // https://sharp.pixelplumbing.com/api-output#jpeg
-    quality: 100,
+    quality: 90,
   },
   jpg: {
     // https://sharp.pixelplumbing.com/api-output#jpeg
-    quality: 100,
+    quality: 90,
   },
   tiff: {
     // https://sharp.pixelplumbing.com/api-output#tiff
@@ -68,4 +42,7 @@ const DEFAULT_OPTIONS = {
 export default defineConfig({
   root: "./src",
   plugins: [ViteImageOptimizer(DEFAULT_OPTIONS)],
+  build: {
+    outDir: "../dist",
+  },
 });
