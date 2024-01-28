@@ -27,6 +27,11 @@
     padding-top: calc(4*var(--step-px));
 }
 
+.header .button-burger-menu svg {
+    height: calc(12 * var(--step-px));
+    width: calc(12 * var(--step-px));
+}
+
 .header .icon-burger-menu {
     fill: var(--first-logo-gold-color);
 }
@@ -53,7 +58,7 @@
     padding-top: calc(24 * var(--step-px));
     width: 100vw;
     height: 100vh;
-    min-height: 308px;
+    min-height: calc(77 * var(--step-px));
     position: absolute;
     z-index: 1;
     left: 50%;
