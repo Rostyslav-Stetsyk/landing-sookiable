@@ -93,12 +93,12 @@
     display: block;
     padding: calc(3 * var(--step-px)) 0;
     color: var(--logo-dark-brown-color);
+    transition: color 250ms ease-in-out;
 }
 
 .nav-list .nav-link:hover,
 .nav-list .nav-link:focus {
     color: var(--first-logo-gold-color);
-    transition: color 250ms ease-in-out;
 }
 
 
