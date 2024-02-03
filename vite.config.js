@@ -41,7 +41,7 @@ const DEFAULT_OPTIONS = {
 
 export default defineConfig({
   root: "./src",
-  base: "landing-sookiable",
+  base: "/landing-sookiable",
   publicDir: "../public",
   plugins: [ViteImageOptimizer(DEFAULT_OPTIONS)],
   build: {
