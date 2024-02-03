@@ -9,20 +9,6 @@
     position: relative;
 }
 
-.about-us .flip-card {
-    position: relative;
-    overflow: hidden;
-    height: 280px;
-    border-radius: 24px;
-}
-
-.about-us .flip-img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .about-us .img-shadow {
     position: absolute;
     top: 50%;
@@ -88,7 +74,7 @@
     top: 0;
     left: 0;
     transform: translate(-10%, -30%);
-    transition: opacity 250ms ease-in-out 500ms;
+    transition: opacity 250ms ease-in-out 700ms;
 }
 
 .about-us .post.first p {
@@ -100,7 +86,7 @@
     bottom: 0;
     right: 0;
     transform: translate(10%, 15%);
-    transition: opacity 250ms ease-in-out 750ms;
+    transition: opacity 250ms ease-in-out 1000ms;
 }
 
 .post.second .svg-list {
