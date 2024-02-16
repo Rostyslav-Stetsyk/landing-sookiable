@@ -29,6 +29,12 @@ const DEFAULT_OPTIONS = {
   cacheLocation: undefined,
 };
 
+// const debugInsertHTML = {
+//       debug: {
+//         logPath: true,
+//       },
+//     }
+
 export default defineConfig({
   root: "./src",
   base: "/landing-sookiable",
