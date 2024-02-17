@@ -4,5 +4,6 @@
 @import './default/global.css';
 @import './logo.css';
 @import "./header.css";
+@import "./hero.css";
+@import "./flip-card.css";
 @import "./about-us.css";
-@import "./flip-card.css"

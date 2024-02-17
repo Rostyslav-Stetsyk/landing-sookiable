@@ -1,151 +1,48 @@
 .about-us .container {
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 50px;
 }
 
-.about-us .img-container {
-    max-width: 420px;
+
+.img-wrapper {
     position: relative;
-}
-
-.about-us .img-shadow {
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    display: block;
     width: 100%;
-    max-width: 420px;
-    height: 280px;
-    border-radius: 28px;
-    transform-origin: center;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-}
-
-.img-shadow.first {
-    background-color: #ffd6b0;
-    transform: scale(1.1) translate(45%, -45%) rotate(8deg);
-}
-
-.img-shadow.second {
-    background-color: #ffecde;
-    transform: scale(1.2) translate(40%, -40%) rotate(-6deg);
-}
-
-.hero-decorate {
-    position: relative;
-    max-width: 375px;
-}
-
-.about-us .post {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    column-gap: 16px;
-    max-width: 260px;
-    padding: 8px;
-    background-color: #f1f2f3;
-    border: #ddd solid 2px;
-    border-radius: 24px;
-    text-align: center;
-    opacity: 0;
-}
-
-.animated .about-us .post {
-    opacity: 1;
-}
-
-.about-us .post img {
-    width: 40px;
-    height: 40px;
-}
-
-.about-us .post .flag {
+    max-width: 320px;
+    aspect-ratio: 1;
     border-radius: 50%;
-    border: #ddd solid 2px;
+    overflow: hidden;
 }
 
-.about-us .post p {
-    font-size: 16px;
-    font-family: "roboto";
+.person-card img {
+    max-height: fit-content;
+    width: 700px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
 }
 
-.about-us .post.first {
-    top: 0;
-    left: 0;
-    transform: translate(-10%, -30%);
-    transition: opacity 250ms ease-in-out 700ms;
+.person-card.first img {
+    transform: translate(-56%, -28%);
 }
 
-.about-us .post.first p {
-    top: 0;
-    width: calc(100% - 14 * var(--step-px));
+.person-card.second img {
+    width: 600px;
+    transform: translate(-55%, -35%);
 }
 
-.about-us .post.second {
-    bottom: 0;
-    right: 0;
-    transform: translate(10%, 15%);
-    transition: opacity 250ms ease-in-out 1000ms;
-}
-
-.post.second .svg-list {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.about-us .hero-sticker {
+.person-card {
     display: flex;
     align-items: center;
-    justify-content: space-around;
     flex-direction: column;
-    max-width: 375px;
-    height: 320px;
-    padding: 40px 20px;
+    gap: 20px;
+}
+
+.person-card h3 {
+    font-size: 36px;
+}
+
+.person-card p {
     text-align: center;
-    background-color: #F8F1CE;
     font-size: 24px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-.hero-sticker .title {
-    font-weight: 500;
-}
-
-.hero-sticker .btn {
-    padding: 8px 16px;
-    border-radius: 24px;
-    width: fit-content;
-    border: none;
-    background-color: var(--second-logo-light-gold-color);
-    transform: scale(1);
-    transition: background-color 250ms ease-in-out, transform 250ms ease-in-out;
-}
-
-.hero-sticker .btn:hover,
-.hero-sticker .btn:focus {
-    background-color: var(--first-logo-gold-color);
-    transform: scale(1.05);
-}
-
-@media (min-width: 719px) {
-    .about-us .container {
-        flex-direction: row-reverse;
-        justify-content: space-around;
-    }
-
-    .about-us .hero-decorate {
-        width: 50%;
-        max-width: 420px;
-    }
-
-    .about-us .flip-card {
-        height: 320px;
-    }
-
-    .about-us .hero-sticker {
-        width: 50%;
-    }
 }
