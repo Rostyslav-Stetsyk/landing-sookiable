@@ -4,6 +4,8 @@
     text-align: center;
 }
 
+
+
 .about-us .description {
     font-size: 24px;
     text-align: center;
@@ -71,6 +73,12 @@
 }
 
 @media (min-width: 719px) {
+    .about-us.section {
+        background-image: url(../img/background-about-us-tablet.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
     .person-wrapper {
         gap: 0;
     }
