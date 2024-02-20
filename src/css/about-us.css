@@ -4,8 +4,6 @@
     text-align: center;
 }
 
-
-
 .about-us .description {
     font-size: 24px;
     text-align: center;
@@ -43,6 +41,7 @@
     aspect-ratio: 1;
     border-radius: 50%;
     overflow: hidden;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 25%);
 }
 
 .person-card img {
@@ -53,13 +52,33 @@
     top: 50%;
 }
 
-.person-card.first img {
+.person-card.first .default-photo {
     transform: translate(-48%, -34%);
 }
 
-.person-card.second img {
+.person-card.first .heppie-photo {
+    width: 460px;
+    transform: translate(-45%, 25%);
+    transition: transform 250ms linear;
+}
+
+.person-card.first:hover .heppie-photo {
+    transform: translate(-45%, -28%)
+}
+
+.person-card.second .default-photo {
     width: 600px;
     transform: translate(-55%, -35%);
+}
+
+.person-card.second .heppie-photo {
+    width: 450px;
+    transform: translate(-50%, 15%);
+    transition: transform 250ms linear;
+}
+
+.person-card.second:hover .heppie-photo {
+    transform: translate(-50%, -40%);
 }
 
 .person-card h3 {
@@ -74,7 +93,7 @@
 
 @media (min-width: 719px) {
     .about-us.section {
-        background-image: url(../img/background-about-us-tablet.png);
+        background-image: url("../img/background-about-us-tablet.png");
         background-repeat: no-repeat;
         background-position: center;
     }

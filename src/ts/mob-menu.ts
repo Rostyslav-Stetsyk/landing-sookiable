@@ -1,6 +1,6 @@
 const refs = {
   button: document.querySelector("#mob-menu") as HTMLElement,
-  header: document.querySelector(".header.section") as HTMLElement,
+  header: document.querySelector("#header") as HTMLElement,
   navLinks: document.querySelectorAll(".nav-link") as NodeListOf<HTMLElement>,
 };
 
