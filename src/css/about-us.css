@@ -58,7 +58,7 @@
 
 .person-card.first .heppie-photo {
     width: 460px;
-    transform: translate(-45%, 25%);
+    transform: translate(-45%, 30%);
     transition: transform 250ms linear;
 }
 
@@ -73,7 +73,7 @@
 
 .person-card.second .heppie-photo {
     width: 450px;
-    transform: translate(-50%, 15%);
+    transform: translate(-50%, 20%);
     transition: transform 250ms linear;
 }
 
