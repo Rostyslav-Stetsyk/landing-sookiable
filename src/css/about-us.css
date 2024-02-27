@@ -1,11 +1,4 @@
-.about-us .title {
-    font-size: 36px;
-    font-weight: 500;
-    text-align: center;
-}
-
 .about-us .description {
-    font-size: 24px;
     text-align: center;
     margin-top: 16px;
 }
@@ -88,10 +81,9 @@
 
 .person-card p {
     text-align: center;
-    font-size: 24px;
 }
 
-@media (min-width: 719px) {
+@media (min-width: 720px) {
     .about-us.section {
         background-image: url("../img/background-about-us-tablet.png");
         background-repeat: no-repeat;

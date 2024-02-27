@@ -135,7 +135,7 @@
     transform: scale(1.05);
 }
 
-@media (min-width: 719px) {
+@media (min-width: 720px) {
     .hero .container {
         flex-direction: row-reverse;
         justify-content: space-around;
