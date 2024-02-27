@@ -1,0 +1,43 @@
+.title-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+
+.customers .flip-card {
+    max-width: 264px;
+}
+
+.customers .flip-card img {
+    max-height: 110%;
+}
+
+.customers-list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.customers-list>li {
+    width: 100%;
+    text-align: center;
+}
+
+@media (min-width: 720px) {
+    .customers-list {
+        flex-direction: row;
+    }
+
+    .customers-list>li {
+        width: 33%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .title-wrapper {
+        flex-direction: row;
+    }
+}
