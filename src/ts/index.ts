@@ -1,2 +1,3 @@
-import "./mob-menu.js";
-import "./animated.js";
+import "./mob-menu.ts";
+import "./animated.ts";
+import "./materials.ts";

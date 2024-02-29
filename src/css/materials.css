@@ -1,0 +1,81 @@
+.materials.section {
+    padding-bottom: 60px;
+}
+
+.materials .gif {
+    display: none;
+}
+
+.materials .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.materials-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.materials-list .el {
+    display: flex;
+    flex-shrink: 0;
+    gap: 16px;
+}
+
+.materials-list .el p {
+    text-align: left;
+}
+
+.materials-list .el:nth-child(2n) svg {
+    stroke: var(--text-accent-color);
+    flex-shrink: 0;
+}
+
+.materials-list .el:nth-child(2n+1) svg {
+    stroke: var(--first-logo-gold-color);
+    flex-shrink: 0;
+}
+
+.materials-list .el span {
+    color: black;
+}
+
+.materials-list .el:nth-child(2n) {
+    color: var(--first-logo-gold-color);
+}
+
+.materials-list .el:nth-child(2n+1) {
+    color: var(--text-accent-color);
+}
+
+.learning-app-wrapper {
+    width: 100vw;
+    overflow: scroll;
+    position: absolute;
+    left: 0;
+    mask: linear-gradient(90deg, transparent, transparent 1%, white 15%, white 85%, transparent 99%, transparent);
+}
+
+.learning-app-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.learning-app {
+    width: max-content;
+    display: flex;
+    gap: 20px;
+    animation: scrollApp 20s linear infinite;
+}
+
+.learning-app:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scrollApp {
+    to {
+        transform: translate(calc(-50% - 10px));
+    }
+}
