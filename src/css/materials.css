@@ -1,5 +1,12 @@
 .materials.section {
     padding-bottom: 60px;
+    position: relative;
+}
+
+.materials .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .materials .gif {
@@ -10,7 +17,6 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding-bottom: 30px;
 }
 
 .materials-list {
@@ -52,11 +58,14 @@
 }
 
 .learning-app-wrapper {
-    width: 100vw;
+    width: calc(100vw - (100vw - 100%));
+    max-width: 1440px;
     overflow: scroll;
     position: absolute;
-    left: 0;
-    mask: linear-gradient(90deg, transparent, transparent 1%, white 15%, white 85%, transparent 99%, transparent);
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    mask: linear-gradient(90deg, transparent, transparent 2%, white 10%, white 90%, transparent 98%, transparent);
 }
 
 .learning-app-wrapper::-webkit-scrollbar {
@@ -77,5 +86,17 @@
 @keyframes scrollApp {
     to {
         transform: translate(calc(-50% - 10px));
+    }
+}
+
+@media (min-width: 720px) {
+    .materials .gif {
+        display: block;
+    }
+}
+
+@media (min-width: 1024px) {
+    .materials .container {
+        flex-direction: row;
     }
 }
