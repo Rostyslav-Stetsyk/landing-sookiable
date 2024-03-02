@@ -8,7 +8,6 @@ interface dataEl {
 }
 
 const appList = document.querySelector(".js-learning-app") as HTMLElement;
-console.log(data);
 
 const getMarkupElement = ({ id, linkLogo, linkApp, describe }: dataEl) =>
   `<li data-id="${id}">

@@ -59,8 +59,8 @@
 
 .learning-app-wrapper {
     width: calc(100vw - (100vw - 100%));
-    max-width: 1440px;
-    overflow: scroll;
+    max-width: 973px;
+    overflow: hidden;
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -75,7 +75,7 @@
 .learning-app {
     width: max-content;
     display: flex;
-    gap: 20px;
+    gap: 30px;
     animation: scrollApp 20s linear infinite;
 }
 
