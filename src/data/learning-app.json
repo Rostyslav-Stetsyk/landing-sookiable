@@ -2,13 +2,43 @@
   {
     "id": 1,
     "linkLogo": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Quizlet_Logo_2021.svg",
-    "linkApp": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Quizlet_Logo_2021.svg",
-    "describe": "Quizlet logo"
+    "linkApp": "https://quizlet.com/",
+    "describe": "Quizlet"
   },
   {
     "id": 2,
+    "linkLogo": "https://upload.wikimedia.org/wikipedia/commons/1/19/Google_Classroom_Logo.svg",
+    "linkApp": "https://classroom.google.com/",
+    "describe": "Google Classroom"
+  },
+  {
+    "id": 3,
+    "linkLogo": "https://cdn.freelogovectors.net/wp-content/uploads/2022/10/wordwall-logo-freelogovectors.net_.png",
+    "linkApp": "https://wordwall.net/",
+    "describe": "Wordwall"
+  },
+  {
+    "id": 4,
+    "linkLogo": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Kahoot_Logo.svg",
+    "linkApp": "https://kahoot.com/",
+    "describe": "Kahoot!"
+  },
+  {
+    "id": 5,
+    "linkLogo": "https://upload.wikimedia.org/wikipedia/en/3/39/Memrise-new-logo.png",
+    "linkApp": "https://www.memrise.com/",
+    "describe": "Memrise"
+  },
+  {
+    "id": 6,
     "linkLogo": "https://upload.wikimedia.org/wikipedia/commons/1/19/British_Council_logo.svg",
-    "linkApp": "https://upload.wikimedia.org/wikipedia/commons/1/19/British_Council_logo.svg",
-    "describe": "British Council logo"
+    "linkApp": "https://www.britishcouncil.org/",
+    "describe": "British Council"
+  },
+  {
+    "id": 7,
+    "linkLogo": "https://upload.wikimedia.org/wikipedia/commons/6/65/BBC_logo_%281997-2021%29.svg",
+    "linkApp": "https://www.bbc.co.uk/languages",
+    "describe": "BBC Languages"
   }
 ]
