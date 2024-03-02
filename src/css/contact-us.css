@@ -1,0 +1,17 @@
+.contact-us .title {
+    margin-bottom: 20px;
+}
+
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 24px;
+}
+
+.contact-us form label {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
