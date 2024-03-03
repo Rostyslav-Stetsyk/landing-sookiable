@@ -1,0 +1,33 @@
+.footer p {
+    font-size: 16px;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.footer .documets-links {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.footer a {
+    text-decoration: underline;
+    transition: color 300ms ease-in-out;
+}
+
+.footer a:hover,
+.footer a:focus {
+    color: var(--first-logo-gold-color)
+}
+
+@media (min-width: 720px) {
+    .footer .container {
+        flex-direction: row;
+    }
+}

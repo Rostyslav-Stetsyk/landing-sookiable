@@ -59,7 +59,7 @@
 
 .learning-app-wrapper {
     width: calc(100vw - (100vw - 100%));
-    max-width: 973px;
+    max-width: 1150px;
     overflow: hidden;
     position: absolute;
     left: 50%;
