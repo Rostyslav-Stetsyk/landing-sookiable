@@ -7,13 +7,13 @@
   },
   {
     "id": 2,
-    "linkLogo": "https://upload.wikimedia.org/wikipedia/commons/1/19/Google_Classroom_Logo.svg",
+    "linkLogo": "https://www.gstatic.com/classroom/logo_square_rounded.svg",
     "linkApp": "https://classroom.google.com/",
     "describe": "Google Classroom"
   },
   {
     "id": 3,
-    "linkLogo": "https://cdn.freelogovectors.net/wp-content/uploads/2022/10/wordwall-logo-freelogovectors.net_.png",
+    "linkLogo": "https://wordwallapp.azureedge.net/static/content/images/global/logo-large.1bqpxglqwvexwcf9huxjhhg2.png",
     "linkApp": "https://wordwall.net/",
     "describe": "Wordwall"
   },
@@ -25,7 +25,7 @@
   },
   {
     "id": 5,
-    "linkLogo": "https://upload.wikimedia.org/wikipedia/en/3/39/Memrise-new-logo.png",
+    "linkLogo": "https://6968579.fs1.hubspotusercontent-na1.net/hubfs/6968579/Memrise%20July%202020/Images/logo_yellow.svg",
     "linkApp": "https://www.memrise.com/",
     "describe": "Memrise"
   },
