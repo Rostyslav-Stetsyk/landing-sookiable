@@ -9,12 +9,14 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/intl-tel-input": "^18.1.4",
     "@typescript-eslint/parser": "^6.21.0",
     "sharp": "^0.33.2",
     "typescript": "^5.3.3",
     "vite": "^5.0.8"
   },
   "dependencies": {
+    "intl-tel-input": "^19.5.5",
     "modern-normalize": "^2.0.0",
     "vite-plugin-html-inject": "^1.1.2"
   }
