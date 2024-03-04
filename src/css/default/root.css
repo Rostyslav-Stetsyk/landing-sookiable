@@ -6,5 +6,7 @@
     --logo-dark-brown-color: #2f2710;
     --logo-red-color: #c20505;
     --logo-turquoise-color: #309188;
-    --text-accent-color: #F25B88
+    --text-accent-color: #F25B88;
+    --sticker-color: #F8F1CE;
+    --sticker-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }

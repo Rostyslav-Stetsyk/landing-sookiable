@@ -1,3 +1,14 @@
+.contact-us.section {
+    overflow: visible;
+}
+
+.contact-us .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .contact-us .title {
     margin-bottom: 20px;
 }
@@ -5,13 +16,63 @@
 .contact-us form {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
     font-size: 24px;
+    padding: 40px 20px;
+    background-color: var(--sticker-color);
+    box-shadow: var(--sticker-shadow);
 }
 
-.contact-us form label {
+.contact-us form .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact-us .field {
     display: flex;
     flex-direction: column;
 
     justify-content: space-between;
+    max-width: 242px;
+    width: 100%;
+}
+
+.contact-us .radio-btn {
+    width: 242px;
+}
+
+.contact-us .text-input {
+    padding: 6px;
+    border-radius: 8px;
+    border: 1px solid var(--logo-dark-brown-color);
+    background-color: rgba(0, 0, 0, 0.05);
+    max-width: 242px;
+    width: 100%;
+}
+
+.contact-us .btn {
+    padding: 8px 16px;
+    border-radius: 24px;
+    width: fit-content;
+    border: none;
+    background-color: var(--second-logo-light-gold-color);
+    transform: scale(1);
+    transition: background-color 250ms ease-in-out, transform 250ms ease-in-out;
+}
+
+.contact-us .btn:hover,
+.contact-us .btn:focus {
+    background-color: var(--first-logo-gold-color);
+    transform: scale(1.05);
+}
+
+@media (min-width: 720px) {
+    .contact-us form .form-wrapper {
+        height: 160px;
+        flex-wrap: wrap;
+        width: 100%;
+    }
 }

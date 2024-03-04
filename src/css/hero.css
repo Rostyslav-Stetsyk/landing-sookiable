@@ -110,9 +110,9 @@
     height: 320px;
     padding: 40px 20px;
     text-align: center;
-    background-color: #F8F1CE;
+    background-color: var(--sticker-color);
     font-size: 24px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: var(--sticker-shadow);
 }
 
 .hero-sticker .title {
