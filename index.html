@@ -13,8 +13,8 @@
       href="https://fonts.googleapis.com/css2?family=Caveat&family=Roboto:wght@500&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/landing-sookiable/assets/index-NoyG0Fpb.js"></script>
-    <link rel="stylesheet" crossorigin href="/landing-sookiable/assets/index-C5KpjZlL.css">
+    <script type="module" crossorigin src="/landing-sookiable/assets/index-B3Mb2xRe.js"></script>
+    <link rel="stylesheet" crossorigin href="/landing-sookiable/assets/index-R44XVjfc.css">
   </head>
   <body>
     <!-- Header -->
@@ -131,7 +131,7 @@
       <h1 class="title">
         Хочете спробувати безкоштовний урок у нашій супер мовній школі?
       </h1>
-      <button class="btn" type="button">Тиць сюди!</button>
+      <a class="btn" href="#contact-us">Тиць сюди!</a>
     </div>
   </div>
 </section>
@@ -325,18 +325,26 @@
   <div class="container">
     <h2 class="title">Починай вчити англійську прямо зараз!</h2>
     <form>
-      <label>Ім'я<input type="text" name="name" /></label>
-      <label>Email<input type="email" name="email" /></label>
-      <label>Телефон<input type="tel" name="number" id="phone" /></label>
+      <div class="form-wrapper">
+        <label class="field"
+          >Ім'я<input class="text-input" type="text" name="name"
+        /></label>
+        <label class="field"
+          >Email<input class="text-input" type="email" name="email"
+        /></label>
+        <label class="field"
+          >Телефон<input type="tel" class="text-input" name="number" id="phone"
+        /></label>
 
-      <label>
-        Подзвоніть мені
-        <input type="radio" name="prefer" value="telephone" checked />
-      </label>
-      <label>
-        Напишіть мені
-        <input type="radio" name="prefer" value="write" />
-      </label>
+        <label class="radio-btn">
+          Подзвоніть мені
+          <input type="radio" name="prefer" value="telephone" checked />
+        </label>
+        <label class="radio-btn">
+          Напишіть мені
+          <input type="radio" name="prefer" value="write" />
+        </label>
+      </div>
       <button class="btn" type="submit">Відправити!</button>
     </form>
   </div>
